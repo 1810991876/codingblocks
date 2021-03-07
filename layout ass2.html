@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ass2.css">
+    <title>Assignment 2</title>
+</head>
+<body>
+    
+    <div class=".flex-container">
+        <h1 class="logo"><a href="http://projects.adsingh.net/">World Tour</a></h1>
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sign UP</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Cover Image -->
+
+      <div>
+      <img src="https://images.unsplash.com/photo-1614282635334-600d44ad88b1?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDU1fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Background Cover Image" class="bgImage">
+
+      </div>
+
+
+
+      
+      <div class="main" id="flipCardContainer">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="sidea">
+            <img src="https://images.unsplash.com/photo-1595651492943-829bfff09210?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Avatar" id="Img">
+          </div>
+          <div class="sideb" id="b1">
+            <h1>USA</h1>
+      <p>The U.S. is a country of 50 states covering a vast swath of North America</p>
+      <a href="#">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="sidea">
+            <img src="https://images.unsplash.com/photo-1595217478103-2770ed847a03?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Avatar" id="Img">
+          </div>
+          <div class="sideb"  id="b2">
+            <h1>PARIS</h1> 
+            <p>Paris is a major European city and a global center for art, fashion, gastronomy and culture.</p> 
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="sidea">
+            <img src="https://images.unsplash.com/photo-1614056965546-42fbe24eb36c?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDg1fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Avatar" id="Img">
+          </div>
+          <div class="sideb"  id="b3">
+            <h1>SRINAGAR</h1> 
+            <p>The city is known for its natural environment, gardens, waterfronts and houseboats</p> 
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="sidea">
+            <img src="https://images.unsplash.com/flagged/photo-1553027192-6883ef16e2f1?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwM3xGem8zenVPSE42d3x8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Avatar" id="Img">
+          </div>
+          <div class="sideb"  id="b4">
+            <h1>JAPAN</h1> 
+            <p>Japan is an island country in East Asia, located in the northwest Pacific Ocean</p> 
+            <a href="#">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Footer -->
+    <div class="footerContainer" id="footerContainer">
+        <footer>
+            <p>Tour Site<br>
+                <span>&copy;Book Places to visit</span>
+            <a href="" style="text-decoration: underline; color: #000;">webmaster@sitecore.net</a></p>
+          </footer>
+
+    </div>
+    
+</body>
+<style>
+  html{
+    scroll-behavior: smooth;
+}
+* {padding: 0; margin: 0; }
+body{
+    background: #caf0f8;
+}
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background: rgb(253, 243, 208);*/
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+  /*color: #370617;*/
+  
+}
+    .logo a {
+      /*color: rgb(28, 24, 22);*/
+      color: #0096c7;
+
+    }
+
+    .logo, .nav {
+        list-style: none;
+        text-transform: uppercase;
+      
+    }
+
+    .logo a, .nav a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+      
+    }
+
+.nav  {
+  display: flex;
+
+
+}
+
+.nav a {
+  display: block;
+  padding: 1em;
+  color: #0077b6;
+}
+
+.nav a:hover {
+    background: #48cae4;
+
+}
+
+
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .nav  {
+    width: 100%;
+    justify-content: space-around;
+    }
+  }
+
+
+
+
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; 
+}
+  
+  .nav {
+    flex-direction: column;
+  }
+  
+  .nav a { 
+    text-align: center; 
+    padding: 10px;
+
+     
+  }
+  
+  
+}
+
+.bgImage{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.main{
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  #Img{
+    width: 100%;
+    height: 400px;
+}
+  
+  
+  
+  .flip-card:hover  {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor:pointer;
+  }
+  
+  .sidea, .sideb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*-webkit-backface-visibility: hidden;*/
+    backface-visibility: hidden;
+  }
+  
+  .sidea {
+    /*background-color: #bbb;*/
+    color: black;
+  }
+  
+#b1{
+    transform: rotateY(180deg);
+  color: #cdb4db;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-align: center;
+  font-size:2rem;
+  background-color:#cdb4db;
+}
+#b2{
+  transform: rotateY(180deg);
+   color: #cdb4db;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-align: center;
+  font-size:2rem;
+  background-color:#cdb4db;
+
+}
+#b3{
+    transform: rotateY(180deg);
+   color: #cdb4db;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-align: center;
+  font-size:1.5rem;
+  background-color:#cdb4db;
+}
+#b4{
+    transform: rotateY(180deg);
+   color: #cdb4db;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-align: center;
+  font-size:1.5rem;
+  background-color:#cdb4db;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background: #0077b6;
+    text-decoration: none;
+    
+    font-weight: 800;
+  }
+  
+</style>
+</html>
